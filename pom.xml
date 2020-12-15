@@ -12,6 +12,8 @@
         <module>spring-01-testOld</module>
         <module>spring-02-ioc</module>
         <module>spring-03-injection</module>
+        <module>spring-04-anno</module>
+        <module>spring-05-autoAnno</module>
     </modules>
 
     <dependencies>

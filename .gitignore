@@ -1,0 +1,4 @@
+# Project exclude paths
+/spring-01-testOld/target/
+/spring-02-ioc/target/
+/spring-03-injection/target/

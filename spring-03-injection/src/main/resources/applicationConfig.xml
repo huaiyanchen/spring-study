@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="addr" class="com.chy.Address">
+        <property name="address" value="nanc"/>
+    </bean>
+    <bean id="person" class="com.chy.Person">
+        <property name="name" value="chy"/>
+        <property name="address" ref="addr"/>
+        <property name="books">
+            <array>
+                <value>1</value>
+                <value>2</value>
+                <value>3</value>
+            </array>
+        </property>
+        <property name="card">
+            <map>
+                <entry key="11" value="22"/>
+                <entry key="111" value="222"/>
+            </map>
+        </property>
+        <property name="hobbys">
+            <list>
+                <value>123123</value>
+                <value>321321</value>
+                <value>213213</value>
+            </list>
+        </property>
+        <property name="games">
+            <set>
+                <value>LOL</value>
+                <value>BOB</value>
+                <value>COC</value>
+            </set>
+        </property>
+        <property name="wife"><null/></property>
+        <property name="info">
+            <props>
+                <prop key="学号">20190604</prop>
+                <prop key="性别">男</prop>
+                <prop key="姓名">小明</prop>
+            </props>
+        </property>
+    </bean>
+
+
+</beans>

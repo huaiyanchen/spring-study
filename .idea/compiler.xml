@@ -7,8 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-02-ioc" />
-        <module name="spring-01-test" />
         <module name="spring-05-autoAnno" />
+        <module name="spring-07-aop" />
+        <module name="spring-01-test" />
         <module name="spring-06-proxy" />
         <module name="spring-03-injection" />
         <module name="spring-04-anno" />

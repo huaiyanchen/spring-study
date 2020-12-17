@@ -15,6 +15,7 @@
         <module>spring-04-anno</module>
         <module>spring-05-autoAnno</module>
         <module>spring-06-proxy</module>
+        <module>spring-07-aop</module>
     </modules>
 
     <dependencies>

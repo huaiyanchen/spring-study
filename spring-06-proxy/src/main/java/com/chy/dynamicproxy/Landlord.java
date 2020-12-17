@@ -1,4 +1,4 @@
-package dynamicproxy;
+package com.chy.dynamicproxy;
 
 
 //真实角色

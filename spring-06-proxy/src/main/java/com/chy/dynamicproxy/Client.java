@@ -1,4 +1,4 @@
-package dynamicproxy;
+package com.chy.dynamicproxy;
 
 public class Client {
     public static void main(String[] args) {
@@ -7,7 +7,7 @@ public class Client {
 
         //代理角色
         ProxyInvocationHandler pih = new ProxyInvocationHandler();
-        pih.setTarget(landlord);
+        pih.setRent(landlord);
         Rent proxy = (Rent) pih.getProxy();
         proxy.rent();
 

@@ -16,6 +16,7 @@
         <module>spring-05-autoAnno</module>
         <module>spring-06-proxy</module>
         <module>spring-07-aop</module>
+        <module>spring-08-mybatis</module>
     </modules>
 
     <dependencies>
@@ -30,6 +31,12 @@
             <artifactId>junit</artifactId>
             <version>4.13.1</version>
             <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.16</version>
         </dependency>
     </dependencies>
 

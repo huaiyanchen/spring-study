@@ -19,7 +19,4 @@
         <aop:advisor advice-ref="afterLog" pointcut-ref="pointcut"/>
     </aop:config>
 
-
-
-
 </beans>

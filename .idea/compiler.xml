@@ -14,6 +14,7 @@
         <module name="spring-06-proxy" />
         <module name="spring-03-injection" />
         <module name="spring-04-anno" />
+        <module name="spring-09-transaction" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

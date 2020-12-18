@@ -16,5 +16,8 @@
         <module name="spring-04-anno" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-09-springmybatis" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

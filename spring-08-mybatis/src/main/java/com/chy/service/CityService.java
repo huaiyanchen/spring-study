@@ -1,5 +1,9 @@
 package com.chy.service;
 
+import com.chy.dao.City;
+
+import java.util.List;
+
 public interface CityService {
-    public void selectAllCity();
+    public List<City> selectAllCity();
 }

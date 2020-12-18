@@ -22,12 +22,12 @@
         <property name="configLocation" value="mybatis-config.xml"/>
         <property name="mapperLocations" value="classpath:com/chy/Mapper/*.xml"/>
     </bean>
-<!-- SqlSessionTemplate   -->
-    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
-        <constructor-arg index="0" ref="sqlSessionFactory"/>
-    </bean>
+<!--&lt;!&ndash; SqlSessionTemplate   &ndash;&gt;-->
+<!--    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">-->
+<!--        <constructor-arg index="0" ref="sqlSessionFactory"/>-->
+<!--    </bean>-->
     <bean id="CityServiceImpl" class="com.chy.service.impl.CityServiceImpl">
-        <property name="sqlSession" ref="sqlSession"/>
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
     </bean>
 
 </beans>

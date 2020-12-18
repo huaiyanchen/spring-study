@@ -15,17 +15,19 @@
         <property name="username" value="root"/>
         <property name="password" value="123456"/>
     </bean>
+
+<!-- sqlSessionFactory   -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="configLocation" value="mybatis-config.xml"/>
-        <property name="mapperLocations" value="classpath:com/chy/Mapper/CityMapper.xml"/>
+        <property name="mapperLocations" value="classpath:com/chy/Mapper/*.xml"/>
     </bean>
+<!-- SqlSessionTemplate   -->
     <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
         <constructor-arg index="0" ref="sqlSessionFactory"/>
     </bean>
     <bean id="CityServiceImpl" class="com.chy.service.impl.CityServiceImpl">
         <property name="sqlSession" ref="sqlSession"/>
     </bean>
-
 
 </beans>

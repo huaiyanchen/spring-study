@@ -32,10 +32,9 @@ public class TestTest {
     public void testSelectCity2()  {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring-dao.xml");
         CityMapper mapper = (CityMapper) context.getBean("CityServiceImpl");
-
         List<City> cities = mapper.selectAll();
-        System.out.println(cities);
-
-
+        for (City city : cities) {
+            System.out.println(city);
+        }
     }
 }
